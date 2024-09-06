@@ -1,10 +1,5 @@
 package core.mate.academy.model;
 
-/**
- * Add some custom fields that could be only in Bulldozer
- * Do not remove no-args constructor
- */
-
 public class Bulldozer extends Machine {
     private double operatingWeight;
     private boolean isHydraulics;
@@ -21,8 +16,16 @@ public class Bulldozer extends Machine {
         return operatingWeight;
     }
 
+    public void setOperatingWeight(double operatingWeight) {
+        this.operatingWeight = operatingWeight;
+    }
+
     public boolean isHydraulics() {
         return isHydraulics;
+    }
+
+    public void setHydraulics(boolean hydraulics) {
+        isHydraulics = hydraulics;
     }
 
     @Override
